@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AlergomurciaService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AlergomurciaService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfReuniones">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Reuniones" nillable="true" type="tns:Reuniones" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReuniones" nillable="true" type="tns:ArrayOfReuniones" />
+  <xs:complexType name="Reuniones">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="detalle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enlaces" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="lugar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resumen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Reuniones" nillable="true" type="tns:Reuniones" />
+  <xs:complexType name="ArrayOfNoticias">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Noticias" nillable="true" type="tns:Noticias" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNoticias" nillable="true" type="tns:ArrayOfNoticias" />
+  <xs:complexType name="Noticias">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="autor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="detalle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="resumen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Noticias" nillable="true" type="tns:Noticias" />
+  <xs:complexType name="ArrayOfArticulos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Articulos" nillable="true" type="tns:Articulos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArticulos" nillable="true" type="tns:ArrayOfArticulos" />
+  <xs:complexType name="Articulos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="resumen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Articulos" nillable="true" type="tns:Articulos" />
+</xs:schema>

@@ -1,0 +1,22 @@
+﻿@model AlergomuciaMVC.ServiceReference1.Section
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Section", FormMethod.Post))
+{
+
+<label for="Id">Id:</label><input type="text" name="Id" /><br />
+<label for="Section">Seccion:</label><input type="text" name="Section" /><br />
+
+<input type="submit" value="Add" />
+
+} 
+
+
+<div>
+    @*@Html.ActionLink("Back to List", "Index")*@
+</div>

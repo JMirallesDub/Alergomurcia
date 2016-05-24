@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AlergomuciaMVC.ServiceReference1.Document>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Createdby)
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.filePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.seccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.title)
+        </th>
+        <th></th>
+    </tr>
+</table>
+@foreach (var item in Model)
+{
+
+    @Html.DisplayNameFor(model => model.fileID) @Html.DisplayFor(modelItem => item.fileID)
+    <br />
+
+            @Html.DisplayFor(modelItem => item.CreatedDt)
+     <br />
+        
+            @Html.DisplayFor(modelItem => item.Createdby)
+    <br />
+
+          
+    <br />
+            @Html.DisplayFor(modelItem => item.filePath)
+    <br />
+            @Html.DisplayFor(modelItem => item.seccion)
+    <br />
+            @Html.DisplayFor(modelItem => item.title)
+    <br />
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+        
+}
+
+

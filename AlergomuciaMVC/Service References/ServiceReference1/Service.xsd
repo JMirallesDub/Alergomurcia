@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AlergomurciaService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AlergomurciaService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Section" nillable="true" type="tns:Section" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSection" nillable="true" type="tns:ArrayOfSection" />
+  <xs:complexType name="Section">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="seccion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Section" nillable="true" type="tns:Section" />
+  <xs:complexType name="ArrayOfUsers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Users" nillable="true" type="tns:Users" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsers" nillable="true" type="tns:ArrayOfUsers" />
+  <xs:complexType name="Users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Users" nillable="true" type="tns:Users" />
+  <xs:complexType name="ArrayOfDocumentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Documentos" nillable="true" type="tns:Documentos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentos" nillable="true" type="tns:ArrayOfDocumentos" />
+  <xs:complexType name="Documentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Createdby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fileID" type="xs:int" />
+      <xs:element minOccurs="0" name="filePath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="seccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Documentos" nillable="true" type="tns:Documentos" />
+</xs:schema>

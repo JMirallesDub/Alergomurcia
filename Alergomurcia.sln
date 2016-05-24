@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlergomurciaService", "AlergomurciaService\AlergomurciaService.csproj", "{251318CB-AB16-49F6-88C0-7F8286461A1D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AlergomurciaHost", "AlergomurciaHost\", "{344FCB26-03C8-4E60-A4C8-045EDE73E203}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{251318cb-ab16-49f6-88c0-7f8286461a1d}|AlergomurciaService.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55577"
+		Debug.AspNetCompiler.PhysicalPath = "AlergomurciaHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55577\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55577"
+		Release.AspNetCompiler.PhysicalPath = "AlergomurciaHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55577\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55577"
+		SlnRelativePath = "AlergomurciaHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlergomuciaMVC", "AlergomuciaMVC\AlergomuciaMVC.csproj", "{CAC393DA-0946-4515-9B0C-A25D4FC8D9D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{251318CB-AB16-49F6-88C0-7F8286461A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251318CB-AB16-49F6-88C0-7F8286461A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251318CB-AB16-49F6-88C0-7F8286461A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251318CB-AB16-49F6-88C0-7F8286461A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344FCB26-03C8-4E60-A4C8-045EDE73E203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344FCB26-03C8-4E60-A4C8-045EDE73E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344FCB26-03C8-4E60-A4C8-045EDE73E203}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{344FCB26-03C8-4E60-A4C8-045EDE73E203}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CAC393DA-0946-4515-9B0C-A25D4FC8D9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC393DA-0946-4515-9B0C-A25D4FC8D9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC393DA-0946-4515-9B0C-A25D4FC8D9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC393DA-0946-4515-9B0C-A25D4FC8D9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

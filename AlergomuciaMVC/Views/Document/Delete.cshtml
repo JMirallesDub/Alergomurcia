@@ -1,0 +1,72 @@
+﻿@model AlergomuciaMVC.ServiceReference1.Document
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Document</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Createdby)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Createdby)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fileID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fileID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.filePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.filePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
